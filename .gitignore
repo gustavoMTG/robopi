@@ -1,0 +1,4 @@
+.venv/
+docs/_build/*
+*.pyc
+src/robopi.egg-info

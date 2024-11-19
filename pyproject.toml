@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "robopi"
+version = "0.0.1"
+dependencies = [
+    "opencv-python",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["robopi"]
+namespaces = false
