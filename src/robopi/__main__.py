@@ -8,3 +8,12 @@ if not cap.isOpened():
     exit()
 
 print("Camera opened!")
+
+ret, frame = cap.read()
+if ret:
+    cv2.imwrite("captured_frame.jpg", frame)
+    print("Image saved")
+else:
+    print("Error capturing the frame")
+
+cap.release()
