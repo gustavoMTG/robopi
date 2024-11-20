@@ -13,3 +13,5 @@ sudo apt-get install build-essential cmake git unzip pkg-config \
     protobuf-compiler
 
 # ref: https://qengineering.eu/install-opencv-on-raspberry-64-os.html
+
+sudo apt install libopencv-dev python3-opencv

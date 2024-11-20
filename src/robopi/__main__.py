@@ -1,3 +1,7 @@
+import sys
+# For reaching system level dependencies when isolated in virtual environment
+sys.path.append("/usr/lib/python3/dist-packages")
+
 import cv2
 
 

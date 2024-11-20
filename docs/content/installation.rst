@@ -20,3 +20,14 @@ To start developing, first install the developers requirements:
 .. code-block:: console
 
     (.venv) $ pip install -r requirements-dev.txt
+
+System level dependencies
+-------------------------
+
+For system level dependencies there's the **conf/** folder which contains
+opencv's and libcamera's dependencies. Run the scripts:
+
+.. code-block:: console
+
+    $ ./conf/dependencies.sh
+    $ ./conf/libcamera2-dependencies.sh
