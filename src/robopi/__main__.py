@@ -1,23 +1,16 @@
 import sys
 # For reaching system level dependencies when isolated in virtual environment
+# such as picamera2
 sys.path.append("/usr/lib/python3/dist-packages")
 
-import cv2
+from picamera2 import Picamera2, Preview
 
 
-cap = cv2.VideoCapture(0)
+picam2 = Picamera2()
 
-if not cap.isOpened():
-    print("Error, could not open camera")
-    exit()
+camera_config = picam2.create_preview_configuration()
+picam2.configure(camera_config)
+picam2.start_preview(Preview.NULL)
 
-print("Camera opened!")
-
-ret, frame = cap.read()
-if ret:
-    cv2.imwrite("captured_frame.jpg", frame)
-    print("Image saved")
-else:
-    print("Error capturing the frame")
-
-cap.release()
+picam2.start()
+im = picam2.capture_array() # returns numpy array
