@@ -9,6 +9,11 @@ Welcome to robopi documentation
 **Robopi** is a Python program that utilizes machine learning models to detect
 people, track them and follow them if they are inside a given area.
 
+.. image:: imgs/robopi.png
+   :alt: Picture of robopi
+   :width: 300px
+   :align: center
+
 .. note::
    This project is under active development.
 
