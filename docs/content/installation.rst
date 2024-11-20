@@ -25,9 +25,9 @@ System level dependencies
 -------------------------
 
 For system level dependencies there's the **conf/** folder which contains
-opencv's and libcamera's dependencies. Run the scripts:
+opencv's and picamera's dependencies. Run the scripts:
 
 .. code-block:: console
 
     $ ./conf/dependencies.sh
-    $ ./conf/libcamera2-dependencies.sh
+    $ ./conf/picamera2-dependencies.sh

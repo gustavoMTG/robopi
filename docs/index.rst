@@ -17,3 +17,4 @@ people, track them and follow them if they are inside a given area.
    :caption: Contents:
 
    content/installation
+   content/compatibility
