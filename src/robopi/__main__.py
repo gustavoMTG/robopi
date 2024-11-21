@@ -3,6 +3,7 @@ import cv2
 import numpy as np
 
 from . import camera
+from .arraytransform import arraytransform
 
 
 app = Flask(__name__)
@@ -10,6 +11,7 @@ app = Flask(__name__)
 def generate_frames():
     while True:
         frame = camera.get_array()
+        frame = arraytransform(frame)
         _, buffer = cv2.imencode(".jpg", frame)
         frame_bytes = buffer.tobytes()
         yield (b"--frame\r\n"
