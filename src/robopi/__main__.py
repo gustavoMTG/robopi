@@ -24,4 +24,4 @@ def index():
     return '<html><body><h1>Raspberry Pi Camera Stream</h1><img src="/video_feed"></body></html>'
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debuf=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
